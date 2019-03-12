@@ -1,0 +1,118 @@
+	
+	
+	
+	#header_div
+			{
+				margin:0px;
+				border:solid;
+				text-align:center;
+				color:orange;
+			    border-color:black;
+				
+				height:30%;
+				max-height:30%;
+			}
+      
+	.slide_img
+	       {
+			  width:100%; 
+			  height:100%;
+			  padding:0px;
+		   }
+	
+	#link_div
+			{
+				border-style:solid;
+				font-size:25px;
+				word-spacing:15px;
+			    padding-bottom:10px;
+			}
+			
+	#main_cntnt_div
+	{
+		float:left;
+		width:70%;
+		
+	}
+	#div_main_cntnt
+			{   overflow:auto;
+				border-style:solid;
+			     width:100%;
+				 
+				 padding:5px;
+				
+			}
+	#sidebar
+			{ 
+		      border-style:solid;
+			  width:25%;
+			  height:100%;
+			  float:right;
+			}
+	
+	#sidebar img
+			{ 
+			  
+			  height:80px;
+			  width:120px;
+			  margin:60 20;
+			  
+			}
+			
+	
+
+	#inner_cntnt_h1
+			{ 
+			overflow:auto;
+			margin:10px;
+			height:40%;
+			background:pink;
+			padding:10px;
+			float:left;
+			width: 40%;
+			
+			}	
+    #inner_cntnt_h2
+			{ 
+			overflow:auto;
+			margin:10px;
+			height:40%;
+			background:pink;
+			padding:10px;
+			float:right;
+			width: 40%;
+			}	
+    
+     #inner_cntnt_h3
+			{ 
+			overflow:auto;
+			height:40%;
+			background:pink;
+			margin:10px;
+			padding:10px;
+			float:left;
+			clear:left;
+			width: 40%;
+			}		
+	
+     #inner_cntnt_h4
+			{ 
+			overflow:auto;
+			height:40%;
+			background:pink;
+			margin:10px;
+			padding:10px;
+			float:right;
+			clear:right;
+			width: 40%;
+			}		
+			
+	
+	#page_footer
+	{
+		clear:both;
+		border:solid;
+        text-align:center;
+		
+padding:10px;		
+	}
