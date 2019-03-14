@@ -1,0 +1,126 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="assignment1.css">
+	<style>
+.slide_img {display:none;}
+</style>
+</head>
+
+<body>
+	<div id="main_div" onload="carousel()">
+		<div id="header_div">
+		
+		 
+		 <img class="slide_img" src="im1.jpg" >
+         <img class="slide_img" src="im2.jpg">
+         <img class="slide_img" src="im3.jpg">
+         <img class="slide_img" src="im4.jpg">
+         <img class="slide_img" src="im5.jpg">		
+         <button class="slide_left_button" onclick="plusDivs(-1)">&#10094;</button>
+         <button class="slide_right_button" onclick="plusDivs(1)">&#10095;</button>		 
+		
+		</div>
+	
+		<div id="link_div">
+			<a href="link.html" > Home</a> 
+			<a href="assignment1.html"  onclick="hide_function()"> Login</a> 
+			<a href="link.html"> Link3</a> 
+			<a href="link.html"> Link4</a> 
+		</div>
+	    
+		<div id="divafterheader">
+		
+			<div id="main_cntnt_div">
+		
+					<div id="div_main_cntnt"> 
+						<h3> Main Content</h3>
+						<p> You can define an inline frame with HTML tag iframe.<br>
+							The iframe tag is not somehow related to frameset tag, instead, it can appear anywhere in your document.<br>
+							The iframe tag defines a rectangular region within the document in which the browser can display a separate document, including scrollbars and borders. 
+							<br>An inline frame is used to embed another document within the current HTML document.
+						</p>
+					</div>
+			
+					<div id="inner_cntnt_h1">
+						<h3> Beautiful Mountains</h3>
+						<p>Beautiful Mountain (Navajo: Dziłkʼi Hózhóonii) is part of the Chuska Mountains <br>
+						and its summit is the highest point in San Juan County, New Mexico.<br>
+						The mountain is about 26 miles (42 km) southwest of the community of Shiprock in the Four Corners region.<br> 
+						It is on the Navajo Nation and plays a significant role in Navajo mythology.
+	 	
+					</div>
+    
+					<div id="inner_cntnt_h2">
+						<h3> Rain Forest</h3>
+	 	
+					</div>
+    
+					<div id="inner_cntnt_h3">
+						<h3> Northen Lights</h3>
+	 	
+					</div>
+    
+					<div id="inner_cntnt_h4">
+						<h3> French Alps</h3>
+	 	
+					</div>
+    
+			</div>
+			
+			<div id="sidebar"> 
+				<img src="im1.jpg"> 
+				
+				<img src="im2.jpg">
+				<img src="im3.jpg">
+				<img src="im4.jpg">
+				 
+				<img src="im5.jpg">
+				<img src="img1.jpg">
+			</div>
+	
+	</div>
+	<footer id="page_footer">
+	
+	 FOOTER 
+	</footer>
+	 
+	
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function plusDivs(n) {
+  carousel(myIndex += n);
+}
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("slide_img");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 5000); // Change image every 2 seconds
+}  x[myIndex-1].style.display = "block";  
+
+function hide_function()
+ {
+   document.getElementById("main_cntnt_div").style.display="none";
+  
+ 
+ 
+ }
+
+
+</script>
+
+	
+	
+	
+	
+</body>
+</html>

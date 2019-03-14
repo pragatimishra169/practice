@@ -1,0 +1,121 @@
+<html>
+ <head> 
+		<title> 
+		       Login 
+		</title>
+       <link rel="stylesheet" type="text/css" href="assignment1.css">
+		<style>
+			.slide_img {display:none;}
+		</style>
+</head>
+
+<body>
+	<div id="main_div" onload="carousel()">
+		<div id="header_div">
+		
+		 
+		 <img class="slide_img" src="im1.jpg" >
+         <img class="slide_img" src="im2.jpg">
+         <img class="slide_img" src="im3.jpg">
+         <img class="slide_img" src="im4.jpg">
+         <img class="slide_img" src="im5.jpg">		
+         <button class="slide_left_button" onclick="plusDivs(-1)">&#10094;</button>
+         <button class="slide_right_button" onclick="plusDivs(1)">&#10095;</button>		 
+		
+		</div>
+	
+		<div id="link_div">
+			<a href="assignment1.html" > Home</a> 
+			<a href="assignment1.html"  onclick="hide_function()"> Login</a> 
+			<a href="link.html"> Link3</a> 
+			<a href="link.html"> Link4</a> 
+		</div>
+	    
+		<div style="height:400px;background-color:rgba(255,0,0,0.6)" id="main_cntnt_div" >
+		
+		
+			 <div  style="border:solid;border-radius:25px; margin:10px; float:center;width:40%; padding:10px; background-color:rgba(255,0,0,0.1)" align="center">
+					<h3 align="center"> Login </h3>
+						<fieldset>
+							<legend>Login</legend>
+		
+							<form name="login_form" align="center">
+		 
+								<input type="text" id="uname_login" placeholder="UserName" required>
+								<br><br>
+								<input type="password" id="pwd_login" placeholder="Password" maxlength="17" required>
+								<br><br>
+								<button type="submit"  id="login_button"> Login </button>
+								<br> <br>
+								<a href="signup.html" id="signup"> create a new Account </a>
+		   		
+							</form>
+						</fieldset>
+			
+		 
+			</div>		
+						
+    
+		</div>
+			
+			<div id="sidebar"> 
+				<img src="im1.jpg"> 
+				
+				<img src="im2.jpg">
+				<img src="im3.jpg">
+				<img src="im4.jpg">
+				 
+				<img src="im5.jpg">
+				<img src="img1.jpg">
+			</div>
+	
+	</div>
+	<footer id="page_footer">
+	
+	 FOOTER 
+	</footer>
+	 
+	
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function plusDivs(n) {
+  carousel(myIndex += n);
+}
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("slide_img");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 5000); // Change image every 2 seconds
+}  x[myIndex-1].style.display = "block";  
+
+
+  
+ 
+ 
+ 
+
+
+</script>
+
+	
+	
+	
+	
+</body>
+ 
+     
+ </body>
+
+
+</html>
+
