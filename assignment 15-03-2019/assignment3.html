@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <title>exercise page</title>
+        <style>
+            body{
+                width:100%;
+                height:auto;
+               
+            }
+            .btn1{
+                padding:10px;
+                font-size: 12px;
+                margin-left:40%;
+                margin-top:20px;
+            }
+            .container{
+                width:50%;
+                height:150px;
+                background: rgb(243, 243, 132);
+                margin-left: 25%;
+                margin-top: 100px;
+                float:left;
+                
+            }
+              .container1{
+                width:50%;
+                height:auto;
+                background: rgb(243, 243, 132);
+                margin-left: 25%;
+                float:left;
+               
+            }
+            
+            p{
+                font-size: 20px;
+                color:darkblue;
+                font-weight: bolder;
+                text-align:center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <button type="button" class="btn1" onclick="change_text()"><b>    Change Data </b></button>
+            <br>
+               
+        </div>
+        <div class="container1">
+            <p id="target"></p>
+           
+        </div>
+        <script>
+            function change_text(){
+                var pre=document.getElementById("target").innerHTML;
+                var pre_length=pre.length;
+                pre_length--;
+                var pre_char=pre.charAt(pre_length);
+                if(pre.length==0 ||pre_char=="!"){
+                    pre="Hello..";
+                }
+                if(pre_char=="."){
+                    pre="Welcome!!";
+                }
+                document.getElementById("target").innerHTML=pre;
+               
+            }
+
+        </script>
+    </body>
+</html>

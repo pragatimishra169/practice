@@ -1,0 +1,145 @@
+body{
+    background-color: #fbf2d4;
+    height: auto;
+    width: 100%;
+    margin: 0px;
+}
+
+#container{
+    width:97%;
+    height:auto;
+    margin-left:1.5%;         
+}
+
+#Header	{ 
+    		height:90px;
+    		width:auto;
+    	}
+
+#equitas_logo
+       {
+        	margin-left:5px;
+    		float: left;
+	}
+
+.navdiv{
+float:left;
+margin-top:25px;
+}
+
+ 
+.dropbtn {
+  color: black;
+  padding: 10px;
+  background-color:#fbf2d4;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  background-color:white;
+  z-index: 1;
+}
+
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #9b9882;
+}
+
+.button{
+font-size:16px;
+color:#494e59;
+background-color:#fbf2d4;
+border:none;
+}
+
+#header_image{
+    height:150px;
+    width:auto;
+    margin-top:5px ;
+}
+
+#header_image1
+ {
+  
+   width:100%;  
+   
+   background:#0d3f91;
+   color:white;
+   font-size:30px;
+   
+  }
+#header_image2
+ {
+   margin:0px;
+   width:100%;  
+   text-align:center;
+     
+   }
+ 
+#header_image3
+ {
+  
+   width:100%;  
+   margin:0px;
+   background:#0d3f91;
+   color:white;
+   font-size:25px;
+  text-align:center;
+   
+  }
+
+#main_content
+{
+    
+    width:auto;
+    height:60%;
+    margin-top:2px;
+    padding: 3px ;
+}
+
+#main_content img
+{
+ width:98%;
+ height:100%;
+ margin:0px;
+
+}
+
+
+.bottom_text {
+  position: absolute;
+  bottom:-32px;
+  left: 680px;
+  background:#0d3f91;
+  width:600px;
+  text-align:center;
+  padding:5px;
+  color:white;
+  font-size:20px;
+  
+
+}
+

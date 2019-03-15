@@ -1,0 +1,195 @@
+body{
+    background-color: #fbf2d4;
+    height: auto;
+    width: 100%;
+    margin: 0px;
+}
+
+#container{
+    width:97%;
+    height:auto;
+    margin-left:1.5%;         
+}
+
+#Header{ 
+    height:90px;
+    width:auto;
+    border:5px ridge red;
+    border-radius:15px;
+}
+#zoror_logo{
+    margin-left:5px;
+    float: left;
+}
+#zoror_name{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+    font-size: 2em;
+    
+    margin-top: 18px;
+    
+}
+
+#header_text{
+    margin:5 20 ;
+    
+}
+
+#nav1{
+    float:right;
+    height:28px;
+    width:280px;
+    border:5px ridge blue;
+    border-radius:10px;
+    margin: -38px 5px ;
+    
+    
+}
+nav
+{
+    margin:3px;
+}
+a{
+    text-decoration:none;
+    margin: 3px;
+}
+
+#header_image{
+    height:200px;
+    width:auto;
+    border-radius:15px;
+ 
+ border:5px ridge orange;
+ margin-top:5px ;
+}
+
+#im
+{ 
+    width:98% ;
+    height:96%;
+    margin:5px 10px ;
+    border-radius:8px;
+    position: relative;
+}
+
+#main_content
+{
+    border-radius:15px;
+    width:auto;
+    height:60%;
+    border:5px ridge darkgreen;
+    margin-top:5px;
+    padding: 3px ;
+}
+
+
+#main_content_article
+{
+    height:97%;
+    border:5px ridge rgb(131, 87, 189);
+    float:left;
+    width:73%;
+    border-radius:15px;
+
+}
+
+#main_content_article img{
+    margin-top:10px;
+    float:left;
+}
+
+#main_content_article span{
+  font-size: 20px;
+  float:left;
+  margin:18px;
+}
+
+#main_content_article_data
+{
+    display:block;
+}
+
+
+#main_content_side_sside
+{
+    height:97%;
+    border:5px ridge rgb(230, 112, 230);
+    float:right;
+    width:25%; 
+    border-radius:15px; 
+}
+
+#main_content_side_sside_data
+{
+    background-color: gray;
+    height: 90%;
+    margin: 5px;
+    width: 98%;
+    border-radius:10px; 
+    text-align: center;
+    padding: 25px 0px 0px 0px;
+    
+    
+}
+
+#main_content_side_sside_data > span
+{
+    font-size:20px;
+    color:white;
+    margin-top: 20px;
+}
+
+#main_content_side_sside_data > p
+{
+    color:white;
+}
+
+#demo_footer
+{    margin-top:5px;
+    border-radius: 15px;
+    border:5px ridge blue;
+    height: 30%;
+    width:auto;
+    clear: both;
+    padding:5px;
+   
+   
+}
+
+#footer_div1
+{    margin-top:20px;
+    border-radius: 15px;
+    border:5px ridge rgb(26, 1, 1);
+    height: 72%;
+    width:25%;
+    float: left;
+    margin-right:  5px;
+     padding: 15PX 10px 10px 10px;
+     text-align: center;
+   
+}
+
+#footer_div1 span
+{
+    word-spacing: 5px;
+}
+
+#footer_div2
+{    margin-top:20px;
+    border-radius: 15px;
+    border:5px ridge rgb(19, 0, 0);
+    height: 72%;
+    width:40%;
+    float: left;
+padding:15px 10px 10px 10px;
+    margin-right: 5px;
+}
+#footer_div3
+{    margin-top:20px;
+    border-radius: 15px;
+    border:5px ridge rgb(15, 2, 2);
+    height: 72%;
+    width:26%;
+    padding:15px 10px 10px 10px;
+    float: left;
+column-count:2;
+}

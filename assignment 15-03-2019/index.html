@@ -1,0 +1,135 @@
+<html>
+    <head>
+        <title>exercise page</title>
+        <style>
+            body{
+                width:100%;
+                height:auto;
+                background: rgb(250, 250, 197);
+            }
+            .btn1{
+                padding:10px;
+                font-size: 17px;
+                margin-left:40%;
+                margin-top:20px;
+            }
+            .container{
+                width:50%;
+                height:150px;
+                background: rgb(243, 243, 132);
+                margin-left: 25%;
+                margin-top: 100px;
+                float:left;
+                box-shadow: 10px 10px 5px grey;
+            }
+            .container1{
+                width:50%;
+                height:auto;
+                background: rgb(243, 243, 132);
+                margin-left: 25%;
+                float:left;
+                box-shadow: 10px 10px 5px grey;
+            }
+            p{
+                font-size: 20px;
+                color:darkblue;
+                font-weight: bolder;
+                text-align:center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <button type="button" class="btn1" onclick="change_text()"><b>    Change Day   </b></button>
+            <br>
+            <button type="button" class="btn1" onclick="change_month()"><b>Change Month</b></button>    
+        </div>
+        <div class="container1">
+            <p id="target"></p>
+            <p id="target1"></p>
+        </div>
+        <script>
+            function change_text(){
+                /*var pre=document.getElementById("target").innerHTML;
+                var pre_length=pre.length;
+                pre_length--;
+                var pre_char=pre.charAt(pre_length);
+                if(pre.length==0 ||pre_char=="!"){
+                    pre=pre+"Hello..";
+                }
+                if(pre_char=="."){
+                    pre=pre+"Welcome!!";
+                }
+                document.getElementById("target").innerHTML=pre;
+                ------------------------------------------------------------------------------*/
+                var pre=document.getElementById("target").innerHTML;
+                if(pre.length==0 || pre.slice(-7,-4)=="tur"){
+                    pre="Sunday ";
+                }
+                else if(pre.slice(-7,-4)=="Sun"){
+                    pre="Monday ";
+                }
+                else if(pre.slice(-7,-4)=="Mon"){
+                    pre="Tuesday ";
+                }
+                else if(pre.slice(-7,-4)=="ues"){
+                    pre="Wednesday ";
+                }
+                else if(pre.slice(-7,-4)=="nes"){
+                    pre="Thursday ";
+                }
+                else if(pre.slice(-7,-4)=="urs"){
+                    pre="Friday ";
+                }
+                else{
+                    pre="Saturday ";
+                }
+                document.getElementById("target").innerHTML=pre;
+            }
+
+            function change_month(){
+                var month=document.getElementById("target1").innerHTML;
+                console.log(month.slice(-4,1));
+                if(month.length==0 || month.slice(-8,-5)=="Dec"){
+                    month="January";
+                }
+                else if(month.slice(-5,-2)=="nua"){
+                    month="February";
+                }
+                else if(month.slice(-5,-2)=="rua"){
+                    month="March";
+                }
+                else if(month.slice(-5,-2)=="Mar"){
+                    month="April";
+                }
+                else if(month.slice(-5,-2)=="Apr"){
+                    month="May";
+                }
+                else if(month.slice(-3,-1)=="Ma"){
+                    month="June";
+                }
+                else if(month.slice(-4,-1)=="Jun"){
+                    month="July";
+                }
+                else if(month.slice(-4,-1)=="Jul"){
+                    month="August";
+                }
+                else if(month.slice(-4,-1)=="gus"){
+                    month="September";
+                }
+                else if(month.slice(-6,-3)=="tem"){
+                    month="October";
+                }
+                else if(month.slice(-4,-1)=="obe"){
+                    month="November";
+                }
+                else{
+                    month="December";
+                }
+                document.getElementById("target1").innerHTML=month;
+
+            }
+
+        </script>
+    </body>
+</html>
